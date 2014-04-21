@@ -127,6 +127,7 @@ module.exports = function(grunt) {
                 function taskComplete() {
                     outstandingTasks--;
                     if (outstandingTasks === 0) {
+                        outstandingTests--;
                         takeMany();
                     }
                 }
