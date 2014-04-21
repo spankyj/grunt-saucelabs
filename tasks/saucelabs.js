@@ -168,6 +168,8 @@ module.exports = function(grunt) {
             take();
         }
     }
+
+    takeMany();
   };
 
   TestRunner.prototype.runTest = function(browsers, url, framework, tunnelIdentifier, testname, tags, build, callback){
