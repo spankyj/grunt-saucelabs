@@ -164,7 +164,7 @@ module.exports = function(grunt) {
     }
 
     function takeMany() {
-        while (urls.length && (outstandingTests < throttled)) {
+        while (urls.length && ((outstandingTests < throttled) || !throttled)) {
             take();
         }
     }
